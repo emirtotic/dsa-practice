@@ -4,7 +4,7 @@ package com.arrays;
  * Time complexity: O(n)
  * Space complexity: O(1)
  */
-public class MozeZeros {
+public class MoveZeros {
 
     public static void main(String[] args) {
 
