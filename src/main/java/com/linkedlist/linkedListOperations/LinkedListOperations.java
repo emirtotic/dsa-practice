@@ -113,5 +113,32 @@ public class LinkedListOperations {
 
     }
 
+    public void insertAtPosition(int index, ListNode newNode) {
+
+        if (index == 0) {
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+
+        ListNode current = head;
+        int count = 0;
+
+        while (current != null && count < index - 1) {
+            current = current.next;
+            count++;
+        }
+
+        if (current == null) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+
+        newNode.next = current.next;
+        current.next = newNode;
+
+
+    }
+
+
 
 }

@@ -37,7 +37,9 @@ public class Main {
         list.print();
         System.out.println("Find node:");
         System.out.println(list.findValue(15));
-
+        System.out.println("Insert at position:");
+        list.insertAtPosition(3, new ListNode(800));
+        list.print();
 
 
     }
