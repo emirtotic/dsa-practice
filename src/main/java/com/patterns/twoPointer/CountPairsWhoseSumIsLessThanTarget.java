@@ -11,8 +11,6 @@ public class CountPairsWhoseSumIsLessThanTarget {
         int target = -2;
 
         System.out.println(countPairs(nums, target));
-
-
     }
 
     public static int countPairs(List<Integer> nums, int target) {
